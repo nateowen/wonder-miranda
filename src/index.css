@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Cinzel Decorative:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Cinzel:regular,bold,italic&subset=latin,latin-ext');
+
+* {
+  font-family: Kalam;
+}
+
+:root {
+  --text-white: #ededed;
+  --text-black: #121212;
+  --text-purple: #1d0037;
+  --text-gold: #e0bc2b;
+  --color-bg: #070016;
+  --app-padding: 0 2rem;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+  margin: 0;
+  line-height: 110%;
+}
+
+h1 {
+  font-family: Cinzel Decorative;
+  text-transform: uppercase;
+  font-size: clamp(4rem, 8vw, 10rem);
+}
+h2 {
+  font-family: Cinzel;
+  text-transform: uppercase;
+  font-size: clamp(3.5rem, 8vw, 8rem);
+}
+h3 {
+  font-size: clamp(3rem, 8vw, 7rem);
+}
+h4 {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+}
+h5 {
+  font-size: clamp(2rem, 8vw, 5rem);
+}
+h6 {
+  font-size: clamp(1.5rem, 8vw, 4rem);
+  font-weight: 100;
+}
+p {
+  font-size: clamp(1rem, 10vw, 2.5rem);
+}
+
+section {
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+.background-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.foreground-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.section {
+  /* position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; */
+  /* border: 2px solid red; */
+}
+
+.fade-to-purple::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent, #1B0A15);
+}
+
+[class*='bg-'] {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 0;
+}
+
+.bg-1 {
+  background-image: url('backgrounds/actOne/BG4.png');
+  background-color: #000719;
+  padding-top: 407.53%;
+}
+
+.rain {
+  background-image: url('backgrounds/actOne/Rain.png');
+  width: 100%;
+  animation: rain 0.4s infinite linear;
+}
+@keyframes rain {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: bottom left;
+  }
+}
+
+.bg-2 {
+  background-color: #000719;
+  padding-top: 217%;
+}
+
+.bg-4 {
+  background: linear-gradient(to bottom, #000719, black);
+  padding-top: 100%;
+}
+
+.bg-5 {
+  background-image: url('./backgrounds/actOne/BG7_2.png');
+  background-color: transparent;
+  padding-top: 380%;
+}
+
+.bg-6 {
+  background-image: url('./backgrounds/actOne/BG6.png');
+  background-color: transparent;
+  padding-top: 336%;
+}
+
+.bg-9 {
+  background-image: url('./backgrounds/actOne/BG9.png');
+  padding-top: 275%;
+}
+
+.bg-12 {
+  background-image: url('./backgrounds/actOne/BG12.png');
+  padding-top: 287%;
+}
+
+.bg-15 {
+  background-image: url('./backgrounds/actOne/BG15.png');
+  padding-top: 58.21%;
+}
+
+.bg-16 {
+  background-image: url('./backgrounds/actOne/BG16.png');
+  padding-top: 58.21%;
+}
+
+.bg-17 {
+  background-image: url('./backgrounds/actOne/BG17.png');
+  padding-top: 58.21%;
+}
+
+.bg-18 {
+  padding-top: 100%;
+  background-color: black;
+}
+
+
+[class*='section-'] {
+  padding-block: 20px;
+  width: 100%;
+  height: auto;
+  /* padding-top: 407%; */
+}
+
+.title-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-content {
+  padding-bottom: 10%;
+}
+
+.miranda-lottie {
+  height: 0;
+  /* border: 2px solid red; */
+  background-image: url('./backgrounds/actOne/BG2.png');
+  padding-top: 217%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fg-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.prospero-spirits {
+  
+}
+
+.break-50 {
+  height: 50vh;
+}
